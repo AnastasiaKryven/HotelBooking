@@ -1,0 +1,110 @@
+﻿body {
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.topbutton {
+    width: 50px;
+    border: 1px solid #000000;
+    background: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    color: #333;
+    font-family: verdana;
+    font-size: 20px;
+    border-radius: 5px;
+    border-radius: 100%;
+}
+
+.jumbotron {
+    background-color: white;
+}
+
+[class*="sticker"] {
+    position: relative;
+    margin: 15px 0;
+    padding: 33px 15px 15px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .64)
+}
+
+    [class*="sticker"]:after {
+        content: attr(data-sticker);
+        position: absolute;
+        top: 0;
+        padding: 3px 7px;
+        font-size: 12px;
+        font-weight: bold;
+        background: #999;
+        color: #fff
+    }
+
+.sticker-left {
+    border-top-left-radius: 6px
+}
+
+.sticker-right {
+    border-top-right-radius: 6px
+}
+
+h1 {
+    text-align: center;
+}
+
+.col > div {
+    background-color: aquamarine;
+}
+
+.sticker-left:after {
+    left: 0;
+    border-radius: 6px 0 6px 0
+}
+
+.sticker-right:after {
+    right: 0;
+    border-radius: 0 6px 0 6px
+}
+
+.sticker-danger:after {
+    background: #d9534f
+}
+
+.sticker-warning:after {
+    background: #f0ad4e
+}
+
+.sticker-success:after {
+    background: #5cb85c
+}
+
+.sticker-info:after {
+    background: #5bc0de
+}
+
+.sticker-inverse:after {
+    background: #222
+}
